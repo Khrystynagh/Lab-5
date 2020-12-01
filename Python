@@ -1,0 +1,16 @@
+#34. Визначити n перших простих чисел.
+
+n = int(input("Введіть кількість чисел n:"))
+
+i=1
+k=0
+
+while k<n:
+    i+=1
+    meaning=True
+    for j in range(2,i):
+        if i%j==0:
+            meaning=False
+    if meaning:
+        print(i)
+        k += 1
